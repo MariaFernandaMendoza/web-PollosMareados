@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POLLOS MAREADOS</title>
+  <style>
+    /* Estilos para el menú */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6c607cd;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #bb0d0d;
+      color: #0f0102;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    section {
+      padding: 20px;
+    }
+
+    /* Contenedor principal con grid */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+      gap: 20px; /* Espacio entre los elementos */
+    }
+    
+    .menu-item {
+      /* Estilos del menú-item (cada div con imagen) */
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Estilos para las imágenes */
+    .menu-item img {
+      width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+      height: auto; /* Altura automática según el ancho */
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    /* Estilos para los detalles */
+    .menu-item p {
+      display: none;
+    }
+    
+    .menu-item:hover p {
+      display: block;
+    }
+    
+    /* Estilos adicionales para hacerlo responsivo */
+    @media (max-width: 600px) {
+      .menu-item {
+        padding: 10px;
+      }
+
+      /* Modificar el número de columnas en vista móvil */
+      .menu-container {
+        grid-template-columns: 1fr; /* Una columna */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  
+  <header>
+    <img src="pollosimagen.jpg" alt="Logo de la empresa" width="1500" height="400">
+    <h1 style="font-family: 'Times New Roman', serif;">EXPLORA NUESTRO MENÚ</h1>
+  </header>
+  <section style="text-align: center;">
+    <h2 style="font-family: 'Times New Roman', serif;">¡Te esperamos en Pollos Mareados, donde cada bocado es una experiencia llena de sabor! 🍗😋</h2>
+    <p style="font-family: 'Times New Roman', serif;">Estás a un click de recibir el mejor sabor...</p>
+  </section>
+
+  <section style="text-align: center;">
+    <h2 style="font-family: 'Times New Roman', serif;">No resistas más la tentación y date el gusto que te mereces...</h2>
+  </section>
+  
+    <!-- Contenedor principal de los menús con grid -->
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="pollo asado.jpg" alt="Pollo Asado">
+        <h3>Pollo Mareado</h3>
+        <p>¡El platillo de la casa! Delicioso Pollo Mareado</p>
+        <p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</P>
+          <p>Entero = $170</p>
+          <p>1/2 $95</p>
+      </div>
+      <div class="menu-item">
+        <img src="polloadobado.jpg" alt="Pollo adobado">
+        <h3>Pollo Adobado</h3>
+        <p>Pollo cubierto de Adobo</p>
+      <p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</P>
+        <p>Entero = $180</p>
+        <p>1/2 = $95</p>
+      </div>
+      <div class="menu-item">
+        <img src="pollobbq.jpg" alt="Pollo a la Parrilla">
+        <h3>Pollo BBQ</h3>
+        <p>Delicioso pollo en salsa BBQ
+        </p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+        <p>Entero = $180</p>
+        <p>1/2 = $95</p>
+      </div>
+      <div class="menu-item">
+      <img src="polloencacahuatado.jpg" alt="Ensalada de Pollo">
+      <h3>Pollo Encacahuatado</h3>
+      <p>Pollo en salsa de Cacahuate</p>
+    </p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>Entero = $180</p>
+      <p>1/2 = $95</p>
+    </div>
+    <div class="menu-item">
+      <img src="pollochiltepin.jpg" alt="Pollo chiltepin">
+      <h3>Pollo Chiltepín</h3>
+      <p>Delicioso Pollo Chiltepín</p>
+    </p>pollo picoso incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>Entero = $180</p>
+      <p>1/2 = $95</p>
+    </div>
+    <div class="menu-item">
+      <img src="polloenchipotlado.jpg" alt="Arroz con Pollo">
+      <h3>Pollo Enchipotlado</h3>
+      <p>Pollo en salsa de Chipotle</p>
+    </p>incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>Entero = $180</p>
+      <p>1/2 = $95</p>
+    </div>
+    <div class="menu-item">
+      <img src="pollo KFC.jpg" alt="Arroz con Pollo">
+      <h3>Pollo KFC</h3>
+      <p>Delicioso pollo crujiente</p>
+      </p>Incluye ensalada de Col, salsa catsup y salsa verde</p>
+      <p>Entero = $200</p>
+      <p>1/2 = $100</p>
+    </div>
+    <div class="menu-item">
+      <img src="pollohabanero.jpg" alt="Arroz con Pollo">
+      <h3>Pollo Habanero</h3>
+      <p>Pollo en salsa de habanero</p>
+    </p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>Entero = $200</p>
+      <p>1/2 = $100</p>
+    </div>
+    <div class="menu-item">
+      <img src="pollobarbacoa.jpg" alt="Arroz con Pollo">
+      <h3>Pollo en Barbacoa</h3>
+      <p>Pollo estilo barbacoa<p>
+         </p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>Entero = $200</p>
+      <p>1/2 = $100</p>
+    </div>
+    <div class="menu-item">
+      <img src="chistorra.jpg" alt="Arroz con Pollo">
+      <h3>Chistorra</h3>
+      <p>Chistorra asada</p>
+      <p>1Kg = $250</p>
+      <p>1/2Kg = $130</p>
+      <p>1/4Kg = $70</p>
+    </div>
+    <div class="menu-item">
+      <img src="costillabbq.jpg" alt="Arroz con Pollo">
+      <h3>Costilla</h3>
+      <p>Costilla BBQ - Costilla asada</p>
+    </p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+      <p>1Kg = $250</p>
+      <p>1/2Kg = $130</p>
+      <p>1/4Kg = $70</p>
+    </div>
+    <div class="menu-item">
+        <img src="conejo.jpg" alt="Arroz con Pollo">
+        <h3>Conejo</h3>
+        <p>Conejo al Mojo de ajo - Conejo Adobado - Conejo Chiltepín</p>
+        <p>Incluye arroz, frijoles charros, salsa verde, salsa roja, ensalada y cebollitas</p>
+        <p>Entero = $250</p>
+        <p>1/2 = $125</p>
+      </div>
+      <div class="menu-item">
+        <img src="ordendececina.jpg" alt="Arroz con Pollo">
+        <h3>Orden de Cecina</h3>
+        <p>Platillo compuesto de Cecina Asada, ensalada, tlacoyos y queso</p>
+        <p>1 Orden = $130</p>
+        <p>1/2 Orden = $60</p>
+      </div>
+      <div class="menu-item">
+        <img src="quesoasado.jpg" alt="Arroz con Pollo">
+        <h3>Queso Asado</h3>
+        <p>Queso recién asado ¡El más sabroso que puedas probar!</p>
+        <p>Entero = $80</p>
+        <p>1/2 = $40</p>
+      </div>
+      <div class="menu-item">
+        <img src="consome.jpg" alt="Arroz con Pollo">
+        <h3>Consomé de Pollo</h3>
+        <p>Consomé de Pollo con verduras, queso y arroz</p>
+        <p>$25</p>
+      </div>
+        <div class="menu-item">
+          <img src="tlacoyos.jpg" alt="Arroz con Pollo">
+          <h3>Orden de Tlacoyos</h3>
+          <p>Tlacoyos de frijol con queso y crema, salsa roja o verde.</p>
+          <p>$25</p>
+          
+        </div>
+        <div class="menu-item">
+          <img src="alitasbbq.jpg" alt="Arroz con Pollo">
+          <h3>Alitas</h3>
+          <p>Alitas BBQ - Alitas Habanero - Alitas Búfalo</p>
+          <p>Alitas con el aderezo de tu preferencia, incluye aderezo ranch</p>
+          <p>$45</p>
+          
+        </div>
+        <div class="menu-item">
+          <img src="cajitamareada.jpg" alt="Arroz con Pollo">
+          <h3>Cajita Mareada</h3>
+          <p>¡La comida favorita de los niños!</p>
+          <p>Puedes pedir tu cajita mareada con nuggets o pierna de pollo KFC</p>
+        </p>Incluye un juguete para niño o niña, un juguito y papas</p>
+          <p>$69</p>
+          
+        </div>
+        <div class="menu-item">
+          <img src="licor.jpg" alt="Arroz con Pollo">
+          <h3>Licor de Maracuyá</h3>
+          <p>¡Prueba El licor de la casa!</p>
+          <p>Litro = $140</p>
+          <p>1/2 = $75</p>
+          
+        </div>
+    </div>
+  </section>
+    
+    <section>
+      <h2>Ubicación</h2>
+      <p>Estamos ubicados en<p>
+         <strong>Matriz San Lorenzo:</strong>
+        </p> Carretera Federal Pte, 439, San Lorenzo Teotipilco, Tehuacán, Pue.</p>
+        <strong>Sucursal Coapan:</strong>
+      </p>Santa María Coapan, Coapan, Tehuacán Pue.</p>
+    </section>
+    <section>
+      <h2>¡Siguenos!</h2>
+      <p>En TikTok como: @pollos.mareados</p>
+    </p>Facebook: Pollos Mareados</p>
+  
+  </p>Número Teléfonico</p>
+  </p>Pollos San Lorenzo: 2371002226<p>
+  </p>Pollos Mareados Coapan: 2381879853</p>
+  
+    </section>
+  </body>
+  </html>
